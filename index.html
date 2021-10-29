@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script type="text/javascript">
+        function myFunction()
+        {
+            var x = document.getElementById("username").value;
+            sessionStorage.setItem("wishname",x);
+           
+            location.href("wish.html");
+    
+
+        }
+
+    </script>
+    <title>Gift</title>
+   
+</head>
+<body>
+    <link rel= "stylesheet" href="style.css" type = text/css>
+</head>
+<body>
+    <main>
+        <section class="landing-page">
+          
+          <div class = "page">
+              <div class = "zigzag1">
+                <div class = "l1"></div>
+                <div class = "l2"></div>
+                <div class = "l1"></div>
+              </div>
+              <div class = "zigzag2"></div>
+            
+              <div>
+
+                      <img src="flower.png"/></div>
+            
+                </div>
+            
+              <div class="first-part">
+                    
+                <p class="heading1 nickname">
+                        Deewali Wishes From Lora
+                    </p>
+                    <form onsubmit="myFunction()" class="search-wrapper cf" action="wish.html" autocomplete="off">
+                        <input type="text" id="username" placeholder="Enter your Name..." required style="box-shadow: none">
+                        <button type="submit" style="margin: auto;" id="btn">Go</button>
+                    </form>
+                </div>
+            </div>
+                       
+        </section>
+        
+        
+    </main>
+    <footer style="height: 30px;position: relative;">
+        <p style="text-align: center;color: beige;">Created by <a href="https://www.instagram.com/suhail_kk_/" style="color:aqua;text-decoration: none;">Suhail k k</a> . © 2021</p>
+
+    </footer>
+
+</body>
+</html>

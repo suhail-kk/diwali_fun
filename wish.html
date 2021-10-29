@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+</head>
+<style>
+    * {
+        padding: 5px;
+        margin: 0%;
+        background-color: #DFF5F5;
+    }
+p,h4,h3,span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+p{
+    color: #5A5396;
+    font-size: 21px;
+    font-family: 'Quicksand', sans-serif;
+}
+h4{
+    color: #15AEB8;
+    font-size:40px;
+    font-family: 'Satisfy', cursive;
+   
+}
+h3{
+    color: #5A5396;
+    font-size:  90px;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Shadows Into Light', cursive;
+}
+span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+.wish-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0%;
+}
+
+</style>
+
+<body>
+    <p> “Wish you all a very very happy diwali and hope that every person transforms from the darkness to happiness.”</p>
+    <h4>Happy</h4>
+    <h3>Diwali</h3>
+    <p id="loc">koii</p>
+    <script>
+        var wishName = sessionStorage.getItem("wishname");
+        document.getElementById("loc").innerHTML = wishName;
+        console.log(wishName);
+    </script>
+    <div class="wish-img">
+        <img src="wish.png" alt="wait..." style="width:50vw;height:50vh"/>
+    </div>
+    
+</body>
+</html>
